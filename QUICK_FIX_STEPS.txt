@@ -1,0 +1,38 @@
+REGISTRATION ERROR FIX - Quick Steps
+=====================================
+
+Problem: ERR_CONNECTION_REFUSED on port 5000
+
+SOLUTION:
+
+1. Open a NEW terminal window
+
+2. Navigate to backend:
+   cd C:\MERN_project\A\backend
+
+3. Start backend server:
+   npm run dev
+
+4. You should see:
+   "MongoDB connected successfully"
+   "Server running on port 5000"
+
+5. If you see MongoDB connection error:
+   - Check your MongoDB Atlas connection string
+   - Make sure your IP is whitelisted in Atlas
+   - Verify database name is correct
+
+6. Keep this terminal open and running
+
+7. In another terminal, start frontend:
+   cd C:\MERN_project\A\frontend
+   npm run dev
+
+8. Now try registration again at:
+   http://localhost:3000/register
+
+IMPORTANT:
+- Backend MUST be running before frontend
+- Keep backend terminal open
+- Check for any error messages in backend terminal
+

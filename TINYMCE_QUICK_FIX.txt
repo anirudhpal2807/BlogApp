@@ -1,0 +1,17 @@
+TinyMCE API Key Setup - Quick Steps
+====================================
+
+1. Go to: https://www.tiny.cloud/
+2. Sign up for FREE account
+3. Get your API key from Dashboard
+4. Add to .env file in project root:
+
+   REACT_APP_TINYMCE_API_KEY=your-api-key-here
+
+5. Run: npm run setup-env
+6. Restart frontend: cd frontend && npm run dev
+7. Refresh browser (Ctrl+F5)
+
+Your .env file location: C:\MERN_project\A\.env
+
+
