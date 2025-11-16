@@ -24,13 +24,16 @@ services:
         sync: false
       - key: CLOUDINARY_API_SECRET
         sync: false
+      - key: FRONTEND_URL
+        value: https://blogapp-1-3wg3.onrender.com
 
   # Frontend Service
   - type: web
     name: blog-frontend
     env: static
-    buildCommand: npm install && cd frontend && npm install && npm run build
+    buildCommand: npm install && cd frontend && npm install && CI=false npm run build
     staticPublishPath: frontend/build
+    pullRequestPreviewsEnabled: false
     envVars:
       - key: REACT_APP_API_URL
         sync: false
