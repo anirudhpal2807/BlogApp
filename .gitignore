@@ -35,3 +35,8 @@ frontend/.pnp.js
 
 # Render
 .render/
+
+# Documentation files (keep only README.md and DOCUMENTATION.md)
+*.md
+!README.md
+!DOCUMENTATION.md
